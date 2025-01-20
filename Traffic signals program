@@ -1,0 +1,9 @@
+Light = input("Light: ").strip().lower()  # Handles spaces and capitalization
+if Light == "red":
+    print("Stop")
+elif Light == "yellow":
+    print("Be ready")
+elif Light == "green":
+    print("Go")
+else:
+    print("The light is broken")
