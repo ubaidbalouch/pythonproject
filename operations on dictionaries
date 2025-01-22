@@ -1,0 +1,21 @@
+student = {
+   " Name": "Ubaid Balouch",
+  " Roll No" :" F24BARIN01M1205",
+  " Field":" Ai",
+ " Semseter" :" 1st"
+
+ }
+for i in student:
+    print(i,":",student[i])
+
+student.update({"Name": "Ubaid Ur Rehman"})
+print(student)
+
+for k in student.keys():
+    print(k)
+
+for v in student.values():
+    print(v)
+
+for k,v in student.items():
+    print(k,v)
