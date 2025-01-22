@@ -1,0 +1,33 @@
+import random
+'''
+1 Paper
+0 Scissor
+-1 Rock 
+
+'''
+computer = random.choice([1 , 0 , -1])
+youstr = input("Enter Your Choices : ").upper()
+yourDict = {"P" : 1 , "S" : 0 , "R" : -1}
+reverseDict = {1 : "Paper" , 0 : "Scissor" , -1 : "Rock"}
+if youstr not in yourDict:
+    print("Invalid input please enter P , S, R")
+else:
+   you = yourDict[youstr]
+   print(f"You chose {reverseDict[you]} and Computer chose {reverseDict[computer]} ")
+#now actual Logic
+if you == computer:
+    print("Its a tie")
+elif you == 0 and computer == 1:
+    print("YOu Win")
+elif you == 1 and computer == 0:
+    print("Computer Wins")
+elif you == 1 and computer == -1:
+    print("You wins")
+elif you == -1 and computer == 1:
+    print("Computer wins")
+elif you == 0 and computer == -1:
+    print("Computer wins")
+elif you == -1 and computer == 0:
+    print("You wins")
+else:
+    print("Invalid input")
