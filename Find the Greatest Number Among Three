@@ -1,0 +1,9 @@
+a = int(input("Enter the value of a:"))
+b = int(input("Enter the value of b:"))
+c = int(input("Enter the value of c:"))
+if(a>b):
+    print("a is greater number")
+elif(b>c):
+    print("b is a greater number")
+else:
+    print("c is greater number"))
