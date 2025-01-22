@@ -1,0 +1,35 @@
+import math
+class calculator:
+    def __init__(self, num1 , num2 ):
+        self.num1 = num1
+        self.num2 = num2
+    def add(self):
+        return self.num1 + self.num2
+    def sub(self):
+        return self.num1 - self.num2
+    def multiple(self):
+        return self.num1 * self.num2
+    def div(self):
+        return self.num1 / self.num2
+    def rem(self):
+        return self.num1 % self.num2
+    def sqr(self):
+        return self.num1 ** 2
+        return self.num2 ** 2
+    def cube(self):
+        return self.num1 ** 3
+        return self.num2 ** 3
+    def sqrt(self):
+        return math.sqrt(self.num1)
+        return math.sqrt(self.num2)
+
+
+c = calculator(12, 6)
+print(c.add())
+print(c.sub())
+print(c.multiple())
+print(c.div())
+print(c.rem())
+print(c.sqr())
+print(c.cube())
+print(c.sqrt())
