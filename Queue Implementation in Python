@@ -1,0 +1,39 @@
+queue = []  
+while True: 
+    n = int(input('''
+1 Add new Element
+2 Remove Element
+3 Display Front Element
+4 Display Rear Element
+5 Display Queue
+6 Exit
+Enter from 1 to 6:
+'''))
+    if n == 1:
+        new_value = input("Enter a value: ")
+        queue.append(new_value)
+        print("Updated Queue:", queue)
+    elif n == 2:
+        if len(queue) == 0:
+            print("Empty Queue. No element to remove.")
+        else:
+            removed_value = queue.pop(0)
+            print(removed_value)
+            print("Updated Queue:", queue)
+    elif n == 3:
+        if len(queue) == 0:
+            print("Empty Queue. No Front element.")
+        else:
+            print("Front Element:", queue[0])
+    elif n == 4:
+        if len(queue) == 0:
+             print("Empty Queue. No Rear element.")
+        else:
+            print("Rear Element",queue[-1] )
+    elif n == 5:
+        print("Current Queue:", queue)
+    elif n == 6:
+        print("Exiting the program.")
+        break
+    else:
+        print("Invalid Input. Please enter a number between 1 and 6.")
