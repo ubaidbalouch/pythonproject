@@ -1,0 +1,8 @@
+result = {}   #this is for takig input fromm user and show in dictionary
+x = int(input("Enter the Marks of sub1:"))
+y = int(input("Enter the Marks of sub2:"))
+z = int(input("Enter the Marks of sub3:"))
+result.update({"sub1":x})
+result.update({"sub2":y})
+result.update({"sub3":z})
+print(result)
