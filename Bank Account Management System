@@ -1,0 +1,28 @@
+
+class Account:
+    def __init__(self , bal , acc):
+        self.balance = bal
+        self.account_no = acc
+
+        # Debt method
+    def debit(self , amount):
+        self.balance -= amount
+        print(f"RS.{amount} was debited")
+        print(f"Now your total amount is {self.total()}")
+
+         # credit method 
+    def credit(self , amount):
+        self.balance += amount
+        print(f"RS.{amount} was credited.")
+        print(f"Now , your total amount is {self.total()}") 
+
+        # Total amount
+    def total(self):
+        return self.balance
+        
+  
+a = Account(12000 , 23800)        
+print(f"Balance : {a.balance} , Account no.{a.account_no}")
+print(a.debit(1000))
+print(a.credit(1000))
+print(a.total())
