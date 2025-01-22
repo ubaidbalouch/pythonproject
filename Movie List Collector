@@ -1,0 +1,8 @@
+movies = []   #if you want to show input in list so write this code 
+movi1 = input("Enter the 1st movie:")
+movi2 = input("Enter the 2nd movie:")
+movi3 = input("Enter the 3rd movie:")
+movies.append(movi1)
+movies.append(movi2)
+movies.append(movi3)
+print(movies))
