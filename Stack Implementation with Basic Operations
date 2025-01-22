@@ -1,0 +1,34 @@
+
+stack = []  
+while True: 
+    n = int(input('''
+1 Add new Element
+2 Remove Element
+3 Display Last Element
+4 Display Stack
+5 Exit
+Enter from 1 to 5:
+'''))
+    if n == 1:
+        new_value = input("Enter a value: ")
+        stack.append(new_value)
+        print("Updated Stack:", stack)
+    elif n == 2:
+        if len(stack) == 0:
+            print("Empty Stack. No element to remove.")
+        else:
+            removed_value = stack.pop()
+            print(removed_value)
+            print("Updated Stack:", stack)
+    elif n == 3:
+        if len(stack) == 0:
+            print("Empty Stack. No last element.")
+        else:
+            print("Last Element:", stack[-1])
+    elif n == 4:
+        print("Current Stack:", stack)
+    elif n == 5:
+        print("Exiting the program.")
+        break
+    else:
+        print("Invalid Input. Please enter a number between 1 and 5.") 
