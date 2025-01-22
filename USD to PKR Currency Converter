@@ -1,0 +1,5 @@
+def converter(usd_val):
+    rs_val=usd_val*270
+    print(usd_val,"USD","=",rs_val)
+
+converter(50))
