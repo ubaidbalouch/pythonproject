@@ -1,0 +1,13 @@
+val1=eval(input("Enter the first number:"))
+val2=eval(input("Enter the second number:"))
+op=input("Enter the operator:")
+if("op==+"):
+    print(val1 + val2)
+elif ("op==-"):
+    print(val1 - val2)
+elif ("op==*"):
+    print(val1 * val2)
+elif ("op==%"):
+    print(val1 % val2)
+else:
+    print("wrong input")
