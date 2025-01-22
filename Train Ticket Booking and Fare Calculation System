@@ -1,0 +1,15 @@
+from random import randint
+class Train:
+    def __init__(self,trainno):
+        self.trainno = trainno
+    def book(self , fro ,to):
+        print(f"Your ticket is booked in train no. {self.trainno} from {fro} to {to}")
+    def status(self):
+        print(f"This train {self.trainno} is running on time")
+    def fare(self , fro , to):
+        print(f"The fare of train no.{self.trainno} from {fro} to {to} is {randint(1500 , 7000)} ")
+
+t = Train(127)
+t.book("Bahawalpur" , "Karachi")
+t.status()
+t.fare("Bahawalpur","Karachi")
