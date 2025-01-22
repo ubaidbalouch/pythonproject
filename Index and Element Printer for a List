@@ -1,0 +1,4 @@
+n = [1 , 3 , 5 , 24 , 99 , 67 , 88 , 100]
+length = len(n)  
+for i in range (length):
+    print(i,n[i])
