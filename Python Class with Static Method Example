@@ -1,0 +1,9 @@
+class demo:
+    a = 2
+    @staticmethod 
+    def greet():
+        print("Hello")
+
+f = demo()
+print(f.a)
+f.greet()
