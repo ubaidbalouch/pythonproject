@@ -1,0 +1,2 @@
+for letter  in range (ord("A"),ord("Z"),1):
+    print(f"The ASCII value of {chr(letter)} is {letter}")
