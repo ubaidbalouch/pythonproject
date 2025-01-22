@@ -1,0 +1,6 @@
+username = input("Enter  the USername :")
+password = input("Enter the Password : ")
+if username == "admin" and password == "admin123" :
+    print("LOgged in Successfully")
+else:
+    print("Wrong information")
