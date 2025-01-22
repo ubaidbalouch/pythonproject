@@ -1,0 +1,6 @@
+def converter(inches):
+    centimeter = inches * 2.54
+    return centimeter
+   
+
+print(converter(40)) 
