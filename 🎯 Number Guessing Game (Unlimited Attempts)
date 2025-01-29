@@ -1,0 +1,14 @@
+import random     
+n = random.randint(1 , 100)
+a = -1
+g = 1
+while (a !=n ):
+    a = int(input("Guess a number :"))
+    if a > n:
+        print("Enter a smaller number")
+        g +=1
+    elif a < n :
+        print("Enter a larger number")
+        g += 1
+
+print(f"Congratulations! You have guessed the right number {n} in {g} guesses")
